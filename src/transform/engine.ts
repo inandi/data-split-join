@@ -2,7 +2,7 @@
  * Text Transformation Engine
  *
  * Contains the normalized template model and pure formatting pipeline used by
- * QuickList Format commands. This module is UI-agnostic and safe for unit tests.
+ * Data Split-Join commands. This module is UI-agnostic and safe for unit tests.
  *
  * @author Gobinda Nandi <gobinda.nandi.public@gmail.com>
  * @since 1.0.0

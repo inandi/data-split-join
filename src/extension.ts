@@ -1,5 +1,5 @@
 /**
- * QuickList Format Extension Main Module
+ * Data Split-Join Extension Main Module
  *
  * VS Code extension for formatting selected editor text into common list shapes
  * (comma/semicolon/newline), applying quote modes, and running reusable custom

@@ -1,6 +1,6 @@
-# QuickList Format - Overview
+# Data Split-Join - Overview
 
-QuickList Format is a VS Code extension that reformats selected editor text using built-in and custom templates.  
+Data Split-Join is a VS Code extension that reformats selected editor text using built-in and custom templates.  
 It is focused on list-like data transformations such as:
 - lines -> comma/semicolon/quoted output
 - comma/semicolon -> newline output

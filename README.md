@@ -1,14 +1,14 @@
 <div align="center">
-  <h1>QuickList Format [Beta]</h1>
+  <h1>Data Split-Join [Beta]</h1>
   <p><strong>Context Menu Data Formatter for VS Code</strong></p>
 </div>
 
 Need to quickly convert copied values between lines, CSV, quoted strings, or prefixed formats?  
-QuickList Format adds a **Format Data** submenu in the editor right-click menu so you can reformat selected text in one step.
+Data Split-Join adds a **Format Data** submenu in the editor right-click menu so you can reformat selected text in one step.
 
-## What is QuickList Format?
+## What is Data Split-Join?
 
-QuickList Format is a VS Code extension for transforming selected text lists:
+Data Split-Join is a VS Code extension for transforming selected text lists:
 - lines -> comma/semicolon separated
 - comma/semicolon list -> lines
 - unquoted -> single/double quoted
@@ -31,7 +31,7 @@ It works for both **saved and unsaved files** because it only operates on editor
 
 1. Open VS Code or Cursor
 2. Go to the Extensions view
-3. Search for **QuickList Format**
+3. Search for **Data Split-Join**
 4. Click Install
 
 ### First Steps
@@ -72,7 +72,7 @@ It works for both **saved and unsaved files** because it only operates on editor
 
 ## Commands
 
-- **QuickList Format: Run Formatter** - Open a picker for built-in and custom templates
+- **Data Split-Join: Run Formatter** - Open a picker for built-in and custom templates
 - **Manage Templates...** - Create, edit, and delete templates
 - **Context menu path** - Right-click editor -> `Format Data`
 
@@ -118,7 +118,7 @@ Press `F5` in VS Code/Cursor to launch the Extension Development Host.
 
 ## Support the Project
 
-If QuickList Format helps your workflow, you can support the project (no pressure):
+If Data Split-Join helps your workflow, you can support the project (no pressure):
 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/igobinda)
 

@@ -1,6 +1,6 @@
 {
-  "name": "quicklist-format",
-  "displayName": "QuickList Format",
+  "name": "data-split-join",
+  "displayName": "Data Split-Join",
   "description": "Quick text list formatter from editor context menu. Convert lines and delimiters, apply quotes, prefix/suffix, and reusable custom templates.",
   "version": "1.0.0",
   "publisher": "iNandi",
@@ -74,7 +74,7 @@
       },
       {
         "command": "quickListFormat.run",
-        "title": "QuickList Format: Run Formatter"
+        "title": "Data Split-Join: Run Formatter"
       }
     ],
     "menus": {
@@ -130,12 +130,12 @@
       ]
     },
     "configuration": {
-      "title": "QuickList Format",
+      "title": "Data Split-Join",
       "properties": {
         "quickListFormat.customTemplates": {
           "type": "array",
           "default": [],
-          "description": "Custom text format templates for QuickList Format.",
+          "description": "Custom text format templates for Data Split-Join.",
           "items": {
             "type": "object"
           }
