@@ -1,3 +1,14 @@
+# Release v1.1.0 - 2026-04-03
+
+## Improvements
+- Renamed the extension from QuickList Format to **Data Split-Join** across packaging, README, and documentation, with expanded commands and clearer project structure.
+- Updated the extension logo asset used for publishing.
+
+## Bug Fixes
+- Corrected the repository URL in the README.
+
+---
+
 # Release v1.0.0 - 2026-04-03
 
 ## New Features
@@ -13,4 +24,3 @@
 - Added concise project documentation in `docs/OVERVIEW.md` with architecture and data-flow diagrams.
 
 ---
-
