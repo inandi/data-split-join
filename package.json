@@ -9,7 +9,7 @@
     "email": "gobinda.nandi.public@gmail.com",
     "url": "https://inandi.github.io/portfolio/index.html"
   },
-  "icon": "media/logo.png",
+  "icon": "media/logo.jpg",
   "repository": {
     "type": "git",
     "url": "https://github.com/iNandi/vscode-plugin"
