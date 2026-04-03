@@ -125,7 +125,7 @@ If Data Split-Join helps your workflow, you can support the project (no pressure
 ## Need Help?
 
 - **Issues**: Found a bug or have an idea? Open an issue on GitHub
-- **Repository**: [github.com/iNandi/vscode-plugin](https://github.com/iNandi/vscode-plugin)
+- **Repository**: [github.com/iNandi/data-split-join](https://github.com/iNandi/data-split-join)
 
 ## License
 

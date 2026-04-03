@@ -2,7 +2,7 @@
   "name": "data-split-join",
   "displayName": "Data Split-Join",
   "description": "Quick text list formatter from editor context menu. Convert lines and delimiters, apply quotes, prefix/suffix, and reusable custom templates.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "iNandi",
   "author": {
     "name": "Gobinda Nandi",
@@ -12,7 +12,7 @@
   "icon": "media/logo.jpg",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iNandi/vscode-plugin"
+    "url": "https://github.com/iNandi/data-split-join"
   },
   "engines": {
     "vscode": "^1.74.0"
