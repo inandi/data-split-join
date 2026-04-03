@@ -1,0 +1,158 @@
+{
+  "name": "data-split-join",
+  "displayName": "Data Split-Join",
+  "description": "Quick text list formatter from editor context menu. Convert lines and delimiters, apply quotes, prefix/suffix, and reusable custom templates.",
+  "version": "1.0.0",
+  "publisher": "iNandi",
+  "author": {
+    "name": "Gobinda Nandi",
+    "email": "gobinda.nandi.public@gmail.com",
+    "url": "https://inandi.github.io/portfolio/index.html"
+  },
+  "icon": "media/logo.jpg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iNandi/vscode-plugin"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Formatters",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:quickListFormat.joinComma",
+    "onCommand:quickListFormat.joinSemicolon",
+    "onCommand:quickListFormat.joinSingleQuotedComma",
+    "onCommand:quickListFormat.joinDoubleQuotedSemicolon",
+    "onCommand:quickListFormat.splitToLines",
+    "onCommand:quickListFormat.addPrefixSuffix",
+    "onCommand:quickListFormat.applyCustomTemplate",
+    "onCommand:quickListFormat.manageTemplates"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "submenus": [
+      {
+        "id": "quickListFormat.contextMenu",
+        "label": "Format Data"
+      }
+    ],
+    "commands": [
+      {
+        "command": "quickListFormat.joinComma",
+        "title": "Join With Comma"
+      },
+      {
+        "command": "quickListFormat.joinSemicolon",
+        "title": "Join With Semicolon"
+      },
+      {
+        "command": "quickListFormat.joinSingleQuotedComma",
+        "title": "Join As Single-Quoted CSV"
+      },
+      {
+        "command": "quickListFormat.joinDoubleQuotedSemicolon",
+        "title": "Join As Double-Quoted Semicolon"
+      },
+      {
+        "command": "quickListFormat.splitToLines",
+        "title": "Split To New Lines"
+      },
+      {
+        "command": "quickListFormat.addPrefixSuffix",
+        "title": "Add Prefix/Suffix..."
+      },
+      {
+        "command": "quickListFormat.applyCustomTemplate",
+        "title": "Custom Template..."
+      },
+      {
+        "command": "quickListFormat.manageTemplates",
+        "title": "Manage Templates..."
+      },
+      {
+        "command": "quickListFormat.run",
+        "title": "Data Split-Join: Run Formatter"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "submenu": "quickListFormat.contextMenu",
+          "group": "modification",
+          "when": "editorTextFocus"
+        }
+      ],
+      "quickListFormat.contextMenu": [
+        {
+          "command": "quickListFormat.joinComma",
+          "group": "1_default"
+        },
+        {
+          "command": "quickListFormat.joinSemicolon",
+          "group": "1_default"
+        },
+        {
+          "command": "quickListFormat.joinSingleQuotedComma",
+          "group": "1_default"
+        },
+        {
+          "command": "quickListFormat.joinDoubleQuotedSemicolon",
+          "group": "1_default"
+        },
+        {
+          "command": "quickListFormat.splitToLines",
+          "group": "1_default"
+        },
+        {
+          "command": "quickListFormat.addPrefixSuffix",
+          "group": "2_custom"
+        },
+        {
+          "command": "quickListFormat.applyCustomTemplate",
+          "group": "2_custom"
+        },
+        {
+          "command": "quickListFormat.manageTemplates",
+          "group": "3_manage"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "quickListFormat.run",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "quickListFormat.manageTemplates"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Data Split-Join",
+      "properties": {
+        "quickListFormat.customTemplates": {
+          "type": "array",
+          "default": [],
+          "description": "Custom text format templates for Data Split-Join.",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "npm run compile && node --test out/test/**/*.test.js",
+    "lint": "tsc -p ./ --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^5.8.3"
+  }
+}
