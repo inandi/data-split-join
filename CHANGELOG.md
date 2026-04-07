@@ -1,3 +1,18 @@
+# Release v3.1.1 - 2026-04-07
+
+## New Features
+- Enhanced release publishing to support both Visual Studio Marketplace and Open VSX Registry.
+
+## Improvements
+- Added release-time validation to ensure the release process checks the extension version against `package.json`.
+- Marked the release channel as preview.
+
+## Bug Fixes
+- Improved release script error handling for missing marketplace tokens.
+- Updated publish-step result reporting to clearly show success or failure for each target.
+
+---
+
 # Release v1.1.0 - 2026-04-03
 
 ## Improvements
